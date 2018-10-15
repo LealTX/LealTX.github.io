@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Jacob Leal's Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <script src='https://code.jquery.com/jquery.js'></script>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
- </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
 <body>
 
     <section class="topBorder">
@@ -17,28 +20,67 @@
             <div class="nameDiv">
                 <h1 class="nameFont">Jacob Leal</h1>
             </div>
-            <a class="contact-tab" href="contact.html"><strong>Contact</strong></a>
+            <a class="contact-tab" href="contact.html">
+                <strong>Contact</strong>
+            </a>
             <a class="portfolio-tab" href="portfolio.html">Portfolio</a>
             <a class="about-tab" href="index.html">About</a>
         </div>
     </section>
 
-    <section class="center">
-        <div class="centerContent">
-            <h1 class="mainHeader">Contact</h1>
-            <p class="mainEntry">Name</p>
-            <input class="entrySingle" type="text" name="name" value="">
-            <p class="mainEntry">Email</p>
-            <input class="entrySingle" type="text" name="email" value="">
-            <p class="mainEntry">Messgae</p>
-            <textarea class="entryMessage" type="text" name="message" value=""></textarea>
-            <input id="submitButton" type="submit" value="Submit">
-        </div>
-    </section>
+    <div class="container">
+        <section class="center">
+            <div class="centerContent">
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="nameEntry" type="text" class="validate">
+                                <label for="first_name">Full Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="emailEntry" type="email" class="validate">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="messageEntry" class="materialize-textarea"></textarea>
+                                <label for="textarea1">Message</label>
+                            </div>
+                        </div>
+                        <a class="waves-effect waves-light btn modal-trigger" data-target="modal1">Submit</a>
+                        <!-- Modal Structure -->
+                        <div id="modal1" class="modal">
+                            <div class="modal-content">
+                                <h4>Thank You for Your Submission</h4>
+                                <p>I will be in contact with you shortly</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- <h1 class="mainHeader">Contact</h1>
+                <p class="mainEntry">Name</p>
+                <input id="nameEntry" class="entrySingle" type="text" name="name" value="">
+                <p class="mainEntry">Email</p>
+                <input id="emailEntry" class="entrySingle" type="text" name="email" value="">
+                <p class="mainEntry">Messgae</p>
+                <textarea id="messageEntry" class="entryMessage" type="text" name="message" value=""></textarea>
+                <input id="submitButton" type="submit" value="Submit"> -->
+            </div>
+        </section>
+    </div>
 
     <section class="footer">
-        <h5>Copyright@</h5>
+        <h6>Copyright@</h6>
     </section>
-    
+
+    <script type='text/javascript' src='./assets/script/javascript.js'></script>
 </body>
+
 </html>
