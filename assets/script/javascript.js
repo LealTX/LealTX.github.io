@@ -15,3 +15,7 @@ $("#submitButton").on("click", function(){
     $("#emailEntry").val("");
     $("#messageEntry").val("");
 })
+
+$(document).ready(function(){
+    $('.modal').modal();
+});

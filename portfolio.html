@@ -11,77 +11,225 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
 
-    <body>
+<body>
 
-        <section class="topBorder">
-            <div class="center">
-                <div class="nameDiv">
-                    <h1 class="nameFont">Jacob Leal</h1>
-                </div>
-                <a class="contact-tab" href="contact.html">Contact</a>
-                <a class="portfolio-tab" href="portfolio.html">
-                    <strong>Portfolio</strong>
-                </a>
-                <a class="about-tab" href="index.html">About</a>
+    <section class="topBorder">
+        <div class="center">
+            <div class="nameDiv">
+                <h1 class="nameFont">Jacob Leal</h1>
             </div>
-        </section>
+            <a class="contact-tab" href="contact.html">Contact</a>
+            <a class="portfolio-tab" href="portfolio.html">
+                <strong>Portfolio</strong>
+            </a>
+            <a class="about-tab" href="index.html">About</a>
+        </div>
+    </section>
 
-        <section class="center">
-            <div class="centerContent">
-                <h1 class="mainHeader">Portfolio</h1>
-                <div class="row">
-                    <div class="col s3">
-                        <a href="https://lealtx.github.io/Word-Guess-Game/">
-                            <img src="./assets/images/batman-logo.jpg">
-                            <h6>Batman Word Game</h6>
-                        </a>
+    <section class="center">
+        <div class="centerContent">
+            <h1 class="mainHeader">Portfolio</h1>
+            <div class="row">
+
+                <!-- Batman Game -->
+                <div class="col s3">
+                    <a class="waves-effect waves-light modal-trigger" href="#batman_modal">
+                        <img src="./assets/images/batman-logo.jpg">
+                        <h6>Batman Word Game</h6>
+                    </a>
+                </div>
+                <div id="batman_modal" class="modal">
+                    <div class="modal-content">
+                        <h4>Batman Word Game</h4>
+                        <p>In this game your goal is to attempt to guess the letters in Batman themed game. Utilizing JavaScript
+                            and Event Listeners to interact with the app.</p>
+                        <a href="https://lealtx.github.io/Word-Guess-Game/" class="modal-close waves-effect waves-green btn">Open App</a>
+                        <a href="https://github.com/LealTX/Word-Guess-Game" class="modal-close waves-effect waves-green btn">Open Github</a>
                     </div>
-
-                    <div class="col s3">
-                        <a href="https://lealtx.github.io/unit-4-game/">
-                            <img src="./assets/images/DC.jpg">
-                            <h6>DC RPG</h6>
-                        </a>
-                    </div>
-
-                    <div class="col s3">
-                        <a href="https://lealtx.github.io/TriviaGame/">
-                            <img src="./assets/images/MusicGame.png">
-                            <h6>Guess The Lyrics</h6>
-                        </a>
-                    </div>
-
-                    <div class="col s3">
-                        <a href="https://lealtx.github.io/GIPHY/">
-                            <img src="./assets/images/giphy.png">
-                            <h6>GIPHY</h6>
-                        </a>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col s3">
-                        <a href="https://lealtx.github.io/firebase-train/">
-                            <img src="./assets/images/train.jpg">
-                            <h6>Firebase Train</h6>
-                        </a>
+                <!-- DC RPG Game -->
+                <div class="col s3">
+                    <a class="waves-effect waves-light modal-trigger" href="#dcrpg_modal">
+                        <img src="./assets/images/DC.jpg">
+                        <h6>DC RPG</h6>
+                    </a>
+                </div>
+                <div id="dcrpg_modal" class="modal">
+                    <div class="modal-content">
+                        <h4>DC RPG</h4>
+                        <p>Pick your DC character and battle the rest. Utilizing jQuery to perform the actions in this game.</p>
+                        <a href="https://lealtx.github.io/unit-4-game/" class="modal-close waves-effect waves-green btn">Open App</a>
+                        <a href="https://github.com/LealTX/unit-4-game" class="modal-close waves-effect waves-green btn">Open Github</a>
                     </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                    </div>
+                </div>
 
-                    <div class="col s3">
-                        <a href="https://irichard03.github.io/Project1/">
-                            <img src="./assets/images/Hooligab.png">
-                            <h6>Hooligans</h6>
-                        </a>
+                <!-- Guess Lyrics Game -->
+                <div class="col s3">
+                    <a class="waves-effect waves-light modal-trigger" href="#lyrics_modal">
+                        <img src="./assets/images/MusicGame.png">
+                        <h6>Guess Lyrics Game</h6>
+                    </a>
+                </div>
+                <div id="lyrics_modal" class="modal">
+                    <div class="modal-content">
+                        <h4>Guess Lyrics Game</h4>
+                        <p>See how well you know these popular song lyrics! This game is using object arrays, timers, switch
+                            cases and intervals with JavaScript.</p>
+                        <a href="https://lealtx.github.io/TriviaGame/" class="modal-close waves-effect waves-green btn">Open App</a>
+                        <a href="https://github.com/LealTX/TriviaGame" class="modal-close waves-effect waves-green btn">Open Github</a>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                    </div>
+                </div>
+
+                <!-- GIPHY -->
+                <div class="col s3">
+                    <a class="waves-effect waves-light modal-trigger" href="#giphy_modal">
+                        <img src="./assets/images/giphy.png">
+                        <h6>GIPHY</h6>
+                    </a>
+                </div>
+                <div id="giphy_modal" class="modal">
+                    <div class="modal-content">
+                        <h4>GIPHY</h4>
+                        <p>Type in your favorite movie, sports team or meme and get a related Gif. This app utilizes ajax calls
+                            to return the Giphy API.</p>
+                        <a href="https://lealtx.github.io/GIPHY/" class="modal-close waves-effect waves-green btn">Open App</a>
+                        <a href="https://github.com/LealTX/GIPHY" class="modal-close waves-effect waves-green btn">Open Github</a>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section class="footer">
-            <h5>Copyright@</h5>
-        </section>
+            <div class="row">
+                <!-- Firebase Train -->
+                <div class="col s3">
+                    <a class="waves-effect waves-light modal-trigger" href="#firebase_modal">
+                        <img src="./assets/images/train.jpg">
+                        <h6>Firebase Train</h6>
+                    </a>
+                </div>
+                <div id="firebase_modal" class="modal">
+                    <div class="modal-content">
+                        <h4>Firebase Train</h4>
+                        <p>Put in a train and starting time and frequency and this app will keep track of the next train's time.
+                            This app utilizes Firebase and Moment js to calculate times and display the times in a readable
+                            format.
+                        </p>
+                        <a href="https://lealtx.github.io/firebase-train/" class="modal-close waves-effect waves-green btn-flat">Open App</a>
+                        <a href="https://github.com/LealTX/firebase-train" class="modal-close waves-effect waves-green btn-flat">Open Github</a>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                    </div>
+                </div>
 
-    </body>
+                <!-- Hooligans -->
+                <div class="col s3">
+                    <a class="waves-effect waves-light modal-trigger" href="#hooligans_modal">
+                        <img src="./assets/images/Hooligab.png">
+                        <h6>Hooligans</h6>
+                    </a>
+                </div>
+                <div id="hooligans_modal" class="modal">
+                    <div class="modal-content">
+                        <h4>Hooligans</h4>
+                        <p>This game was created to help get out your built up sports anger. Pick your favorite team and then
+                            fight oppenents from rival teams. This was created as a group project using all the material
+                            we learned through out the bootcamp course up until this point in the course.</p>
+                        <a href="https://irichard03.github.io/Project1/" class="modal-close waves-effect waves-green btn-flat">Open App</a>
+                        <a href="https://github.com/irichard03/Project1" class="modal-close waves-effect waves-green btn-flat">Open Github</a>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                    </div>
+                </div>
+
+                <!-- Friend Finder -->
+                <div class="col s3">
+                    <a class="waves-effect waves-light modal-trigger" href="#friend_modal">
+                        <img src="./assets/images/FriendFinder.png">
+                        <h6>Friend Finder</h6>
+                    </a>
+                </div>
+                <div id="friend_modal" class="modal">
+                    <div class="modal-content">
+                        <h4>Friend Finder</h4>
+                        <p>Fill out a simple survey to find friends that have a similar personality as you. In this activity,
+                            I used Node and Express servers to handle routing communication between client and server. Also
+                            the app was deployed to Heroku.</p>
+                        <a href="https://sleepy-stream-33969.herokuapp.com/survey" class="modal-close waves-effect waves-green btn-flat">Open App</a>
+                        <a href="https://github.com/LealTX/FriendFinder" class="modal-close waves-effect waves-green btn-flat">Open Github</a>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                    </div>
+                </div>
+
+                <!-- Burger Joint -->
+                <div class="col s3">
+                    <a class="waves-effect waves-light modal-trigger" href="#burger_modal">
+                        <img src="./assets/images/burger-joint.jpg">
+                        <h6>Burger Joint</h6>
+                    </a>
+                </div>
+                <div id="burger_modal" class="modal">
+                    <div class="modal-content">
+                        <h4>Burger Joint</h4>
+                        <p>In this app list a burger that you want to eat then you can mark it as devoured and clear it. This
+                            app utilizes handlebars, ORM, MySql, Express and Node to rout data from the server and display
+                            it to the user.</p>
+                        <a href="https://warm-garden-83730.herokuapp.com/" class="modal-close waves-effect waves-green btn-flat">Open App</a>
+                        <a href="https://github.com/LealTX/burger" class="modal-close waves-effect waves-green btn-flat">Open Github</a>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <!-- Who Saves Who -->
+                <div class="col s3">
+                    <a class="waves-effect waves-light modal-trigger" href="#project3_modal">
+                        <img src="./assets/images/paw.png">
+                        <h6>Who Saves Who</h6>
+                    </a>
+                </div>
+                <div id="project3_modal" class="modal">
+                    <div class="modal-content">
+                        <h4>Who Saves Who</h4>
+                        <p>This site promotes animal shelters and rescues to post their animals to the site so people could have a single source to browse through possible pets. This was done as a group project and utilizes all the material we learned up until that point in the course.</p>
+                        <a href="https://calm-ravine-77316.herokuapp.com/" class="modal-close waves-effect waves-green btn-flat">Open App</a>
+                        <a href="https://github.com/alijan312/Group_Project_2" class="modal-close waves-effect waves-green btn-flat">Open Github</a>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <h5>Copyright@</h5>
+    </section>
+
+    <script src="./assets/script/javascript.js"></script>
+
+</body>
 
 </html>
